@@ -1,0 +1,177 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Keeping from first code */
+    background: #f8fafc; /* Light grey from second code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #1e293b; /* Dark slate text from second code */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Background blobs with blue accents */
+.background-blobs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.background-blobs::before,
+.background-blobs::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.5;
+    animation: float 20s infinite ease-in-out;
+}
+
+.background-blobs::before {
+    width: 300px;
+    height: 300px;
+    background: #1e40af; /* Deep blue from second code */
+    top: -100px;
+    left: -100px;
+}
+
+.background-blobs::after {
+    width: 400px;
+    height: 400px;
+    background: #3b82f6; /* Vibrant blue from second code */
+    bottom: -150px;
+    right: -150px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+}
+
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(248, 250, 252, 0.9); /* Light grey with transparency, inspired by #f8fafc */
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); /* Softer shadow from second code */
+    backdrop-filter: blur(15px); /* Keeping glass effect */
+    border: 1px solid rgba(229, 231, 235, 0.5); /* #e5e7eb-inspired border */
+    position: relative;
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.2), transparent); /* #3b82f6 for rotation */
+    animation: glow 15s infinite; /* Keeping rotation */
+    z-index: -1;
+}
+
+@keyframes glow {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #1e40af; /* Deep blue from second code */
+    text-shadow: 0 0 10px rgba(30, 64, 175, 0.3); /* Subtle glow adjusted */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #475569; /* Slate grey from second code */
+    transition: transform 0.3s ease;
+}
+
+h2:hover {
+    transform: scale(1.1);
+    color: #3b82f6; /* Vibrant blue on hover */
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: block;
+    color: #1e293b; /* Dark slate from second code */
+    transition: all 0.3s ease;
+}
+
+label:hover {
+    color: #3b82f6; /* Vibrant blue on hover */
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e5e7eb; /* Light grey border from second code */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    color: #1e293b; /* Dark text */
+    font-size: 1em;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle inset shadow */
+}
+
+input:focus {
+    border-color: #1e40af; /* Deep blue on focus */
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3); /* #3b82f6 glow */
+}
+
+input:hover {
+    transform: translateY(-2px);
+}
+
+.login-btn {
+    background: linear-gradient(45deg, #1e40af, #3b82f6); /* Blue gradient from second code */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4); /* #3b82f6 shadow */
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #3b82f6, #1e40af); /* Reverse gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}

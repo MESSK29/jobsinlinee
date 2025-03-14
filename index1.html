@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JOBSINLINE - Unleash your career potential with AI-powered resume analysis and job matching.">
+  <meta name="keywords" content="job search, resume analysis, career tools, AI job matching">
+  <meta name="author" content="JOBSINLINE Team">
+  <title>JOBSINLINE - Elevate Your Career</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Add a favicon for professionalism -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1><a href="#home" aria-label="JOBSINLINE Home">JOBSINLINE</a></h1>
+      </div>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#upload">Analyze Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Unleash Your Career Potential</h2>
+      <p>Transform your job search with AI-powered resume analysis and personalized career insights.</p>
+      <a href="#upload" class="cta-button">Start Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About JOBSINLINE</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>**JOBSINLINE – Your AI-Powered Path to Career Success**</p>
+            <p>At JOBSINLINE, we are redefining the job search experience by seamlessly blending the power of advanced AI with a user-centric approach. Our intelligent technology goes beyond traditional resume screening, offering a deep, data-driven analysis of your skills, experience, and career aspirations. By precisely matching your profile with your dream job roles, we provide valuable insights into your hiring potential, identifying key strengths, highlighting skill gaps, and delivering personalized recommendations to refine your resume and enhance your career prospects.</p>
+            <p>Whether you're a seasoned professional looking to elevate your career or a fresh graduate stepping into the competitive job market, JOBSINLINE equips you with the essential tools, knowledge, and strategic guidance needed to stand out. Founded with a mission to revolutionize career-building, we leverage cutting-edge data science to simplify your job search journey, ensuring that you stay ahead in today’s fast-paced professional landscape. Your dream job isn’t just a possibility—it’s within reach with JOBSINLINE, your trusted partner in career success.</p>
+        </div>
+        <div class="about-image">
+          <img src="jobsinline.png" width=400 height=700  alt="JOBSINLINE Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="features" class="features-section">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <article class="feature-card">
+        <i class="fas fa-file-alt"></i>
+        <h3>AI Resume Parsing</h3>
+        <p>Extract key details with precision using advanced AI.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fas fa-briefcase"></i>
+        <h3>Smart Job Matching</h3>
+        <p>Find roles tailored to your unique skills and experience.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Hiring Insights</h3>
+        <p>Predict your success with data-driven probability scores.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Skill Optimization</h3>
+        <p>Get recommendations to enhance your qualifications.</p>
+      </article>
+      <article class="feature-card">
+        <i class="fas fa-comments"></i>
+        <h3>Expert Feedback</h3>
+        <p>Receive detailed, actionable resume improvement tips.</p>
+      </article>
+      <article class="feature-card">
+  <i class="fas fa-robot"></i>
+  <h3>Automated Resume Scoring</h3>
+  <p>Evaluate your resume’s strength with an AI-driven scoring system based on job requirements.</p>
+</article>
+    </div>
+  </div>
+</section>
+
+  <section id="upload" class="upload-section">
+    <div class="container">
+      <h2>Analyze Your Resume</h2>
+      <form id="resumeForm" aria-label="Resume Analysis Form">
+        <div class="form-group">
+          <label for="resume">Upload Resume (PDF, DOC, DOCX)</label>
+          <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required aria-required="true">
+        </div>
+        <div class="form-group">
+          <label for="jobRole">Target Job Role</label>
+                   <select id="jobRole" name="jobRole" required aria-required="true">
+            <option value="" disabled selected>Select a job role</option>
+            <!-- Add more roles as needed -->  <option value="Software Engineer">Software Engineer</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Full Stack Developer">Full Stack Developer</option>
+        <option value="Mobile App Developer">Mobile App Developer</option>
+        <option value="Android Developer">Android Developer</option>
+        <option value="iOS Developer">iOS Developer</option>
+        <option value="DevOps Engineer">DevOps Engineer</option>
+        <option value="Cloud Engineer">Cloud Engineer</option>
+        <option value="Data Scientist">Data Scientist</option>
+        <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+        <option value="Artificial Intelligence Engineer">Artificial Intelligence Engineer</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Business Analyst">Business Analyst</option>
+        <option value="Product Manager">Product Manager</option>
+        <option value="Project Manager">Project Manager</option>
+        <option value="Scrum Master">Scrum Master</option>
+        <option value="QA Engineer">QA Engineer</option>
+        <option value="Automation Test Engineer">Automation Test Engineer</option>
+        <option value="Manual Test Engineer">Manual Test Engineer</option>
+        <option value="UI/UX Designer">UI/UX Designer</option>
+        <option value="Graphic Designer">Graphic Designer</option>
+        <option value="Web Designer">Web Designer</option>
+        <option value="Technical Writer">Technical Writer</option>
+        <option value="Database Administrator">Database Administrator</option>
+        <option value="SQL Developer">SQL Developer</option>
+        <option value="Big Data Engineer">Big Data Engineer</option>
+        <option value="Hadoop Developer">Hadoop Developer</option>
+        <option value="Spark Developer">Spark Developer</option>
+        <option value="Data Engineer">Data Engineer</option>
+        <option value="ETL Developer">ETL Developer</option>
+        <option value="Blockchain Developer">Blockchain Developer</option>
+        <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+        <option value="Ethical Hacker">Ethical Hacker</option>
+        <option value="Network Engineer">Network Engineer</option>
+        <option value="System Administrator">System Administrator</option>
+        <option value="IT Support Specialist">IT Support Specialist</option>
+        <option value="IT Consultant">IT Consultant</option>
+        <option value="Solutions Architect">Solutions Architect</option>
+        <option value="Enterprise Architect">Enterprise Architect</option>
+        <option value="Software Architect">Software Architect</option>
+        <option value="Application Support Engineer">Application Support Engineer</option>
+        <option value="Embedded Systems Engineer">Embedded Systems Engineer</option>
+        <option value="Firmware Engineer">Firmware Engineer</option>
+        <option value="Game Developer">Game Developer</option>
+        <option value="Unity Developer">Unity Developer</option>
+        <option value="AR/VR Developer">AR/VR Developer</option>
+        <option value="Python Developer">Python Developer</option>
+        <option value="Java Developer">Java Developer</option>
+        <option value="C++ Developer">C++ Developer</option>
+        <option value="C# Developer">C# Developer</option>
+        <option value=".NET Developer">.NET Developer</option>
+        <option value="PHP Developer">PHP Developer</option>
+        <option value="Ruby on Rails Developer">Ruby on Rails Developer</option>
+        <option value="Node.js Developer">Node.js Developer</option>
+        <option value="Angular Developer">Angular Developer</option>
+        <option value="React Developer">React Developer</option>
+        <option value="Vue.js Developer">Vue.js Developer</option>
+        <option value="Django Developer">Django Developer</option>
+        <option value="Flask Developer">Flask Developer</option>
+        <option value="Spring Boot Developer">Spring Boot Developer</option>
+        <option value="Laravel Developer">Laravel Developer</option>
+        <option value="WordPress Developer">WordPress Developer</option>
+        <option value="Magento Developer">Magento Developer</option>
+        <option value="Shopify Developer">Shopify Developer</option>
+        <option value="Salesforce Developer">Salesforce Developer</option>
+        <option value="SAP Consultant">SAP Consultant</option>
+        <option value="Oracle Developer">Oracle Developer</option>
+        <option value="ERP Implementation Specialist">ERP Implementation Specialist</option>
+        <option value="CRM Developer">CRM Developer</option>
+        <option value="BI Developer">BI Developer</option>
+        <option value="Power BI Developer">Power BI Developer</option>
+        <option value="Tableau Developer">Tableau Developer</option>
+        <option value="QlikView Developer">QlikView Developer</option>
+        <option value="SAS Developer">SAS Developer</option>
+        <option value="R Developer">R Developer</option>
+        <option value="MATLAB Developer">MATLAB Developer</option>
+        <option value="API Developer">API Developer</option>
+        <option value="Microservices Developer">Microservices Developer</option>
+        <option value="Kubernetes Administrator">Kubernetes Administrator</option>
+        <option value="Docker Specialist">Docker Specialist</option>
+        <option value="Site Reliability Engineer (SRE)">Site Reliability Engineer (SRE)</option>
+        <option value="Release Manager">Release Manager</option>
+        <option value="Configuration Manager">Configuration Manager</option>
+        <option value="Change Manager">Change Manager</option>
+        <option value="Incident Manager">Incident Manager</option>
+        <option value="Problem Manager">Problem Manager</option>
+        <option value="IT Auditor">IT Auditor</option>
+        <option value="Compliance Officer">Compliance Officer</option>
+        <option value="Risk Manager">Risk Manager</option>
+        <option value="Digital Marketing Specialist">Digital Marketing Specialist</option>
+        <option value="SEO Specialist">SEO Specialist</option>
+        <option value="Content Writer">Content Writer</option>
+        <option value="Social Media Manager">Social Media Manager</option>
+        <option value="Growth Hacker">Growth Hacker</option>
+        <option value="Product Owner">Product Owner</option>
+        <option value="Agile Coach">Agile Coach</option>
+        <option value="Business Development Manager">Business Development Manager</option>
+        <option value="Sales Engineer">Sales Engineer</option>
+        <option value="Pre-Sales Consultant">Pre-Sales Consultant</option>
+        <option value="Customer Success Manager">Customer Success Manager</option>
+        <option value="Technical Support Engineer">Technical Support Engineer</option>
+        <option value="Hardware Engineer">Hardware Engineer</option>
+        <option value="IoT Developer">IoT Developer</option>
+        <option value="Robotics Engineer">Robotics Engineer</option>
+        <option value="Computer Vision Engineer">Computer Vision Engineer</option>
+        <option value="NLP Engineer">NLP Engineer</option>
+        <option value="Chatbot Developer">Chatbot Developer</option>
+        <option value="Voice Assistant Developer">Voice Assistant Developer</option>
+        <option value="Cloud Architect">Cloud Architect</option>
+        <option value="AWS Solutions Architect">AWS Solutions Architect</option>
+        <option value="Azure Developer">Azure Developer</option>
+        <option value="Google Cloud Engineer">Google Cloud Engineer</option>
+        <option value="AI Research Scientist">AI Research Scientist</option>
+        <option value="Quantum Computing Engineer">Quantum Computing Engineer</option>
+        <option value="Bioinformatics Specialist">Bioinformatics Specialist</option>
+        <option value="Fintech Developer">Fintech Developer</option>
+        <option value="Edtech Developer">Edtech Developer</option>
+        <option value="Healthtech Developer">Healthtech Developer</option>
+        <option value="E-commerce Specialist">E-commerce Specialist</option>
+        <option value="Supply Chain Analyst">Supply Chain Analyst</option>
+        <option value="Logistics Analyst">Logistics Analyst</option>
+        <option value="GIS Developer">GIS Developer</option>
+        <option value="3D Modeler">3D Modeler</option>
+        <option value="Animator">Animator</option>
+        <option value="Video Editor">Video Editor</option>
+        <option value="Audio Engineer">Audio Engineer</option>
+        <option value="Game Tester">Game Tester</option>
+        <option value="Localization Specialist">Localization Specialist</option>
+        <option value="Translation Specialist">Translation Specialist</option>
+        <option value="Legal Tech Consultant">Legal Tech Consultant</option>
+        <option value="HR Tech Specialist">HR Tech Specialist</option>
+        <option value="Recruitment Consultant">Recruitment Consultant</option>
+        <option value="Learning & Development Specialist">Learning & Development Specialist</option>
+        <option value="Corporate Trainer">Corporate Trainer</option>
+        <option value="IT Trainer">IT Trainer</option>
+        <option value="Coding Instructor">Coding Instructor</option>
+        <option value="Freelance Developer">Freelance Developer</option>
+        <option value="Startup Founder">Startup Founder</option>
+        <option value="Tech Entrepreneur">Tech Entrepreneur</option>
+        <option value="Venture Capitalist">Venture Capitalist</option>
+        <option value="Angel Investor">Angel Investor</option>
+        <option value="Tech Journalist">Tech Journalist</option>
+        <option value="Tech Blogger">Tech Blogger</option>
+        <option value="Open Source Contributor">Open Source Contributor</option>
+        <option value="Community Manager">Community Manager</option>
+        <option value="Event Manager">Event Manager</option>
+        <option value="Tech Evangelist">Tech Evangelist</option>
+        <option value="Innovation Manager">Innovation Manager</option>
+        <option value="RPA Developer">RPA Developer</option>
+        <option value="Low-Code/No-Code Developer">Low-Code/No-Code Developer</option>
+        <option value="Chatbot Trainer">Chatbot Trainer</option>
+        <option value="AI Ethicist">AI Ethicist</option>
+        <option value="Data Privacy Officer">Data Privacy Officer</option>
+        <option value="Cloud Security Engineer">Cloud Security Engineer</option>
+        <option value="Penetration Tester">Penetration Tester</option>
+        <option value="Digital Forensics Analyst">Digital Forensics Analyst</option>
+        <option value="Incident Response Specialist">Incident Response Specialist</option>
+        <option value="Threat Intelligence Analyst">Threat Intelligence Analyst</option>
+        <option value="Malware Analyst">Malware Analyst</option>
+        <option value="Cryptography Specialist">Cryptography Specialist</option>
+        <option value="Compliance Analyst">Compliance Analyst</option>
+        <option value="IT Procurement Specialist">IT Procurement Specialist</option>
+        <option value="Vendor Manager">Vendor Manager</option>
+        <option value="IT Finance Analyst">IT Finance Analyst</option>
+        <option value="IT Strategy Consultant">IT Strategy Consultant</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Analyze Now <i class="fas fa-upload"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <section id="result" class="result-section">
+    <div class="container">
+      <h2>Your Analysis</h2>
+      <div id="loading" class="loading" style="display: none;">
+        <p>Processing your resume...</p>
+        <div class="spinner"></div>
+      </div>
+      <div id="resultContent" class="result-content"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Questions? Reach out to our team for support.</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:saileshmalladi@gmail.com">saileshmalladi@gmail.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+919154343842">+91 9154343842</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Nagarjuna Nagar,Vijayawada,Andhra Pradesh-520008.,INDIA</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JOBSINLINE. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html> 
